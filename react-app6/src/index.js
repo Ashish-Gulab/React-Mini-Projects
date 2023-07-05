@@ -1,6 +1,7 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import Heading from './Components/Heading'
+import ReactDom from 'react-dom/client';
+import Heading from './Components/Heading';
 import Movies from './Components/Movies';
 
-ReactDom.render(<><Heading/>,<Movies/></>,document.getElementById('root'));
+const root=ReactDom.createRoot(document.getElementById('root'));
+root.render(<><Heading/><Movies/></>,document.getElementById('root'));

@@ -13,9 +13,9 @@ if(time>=1 && time<12)
   wish='Good Morning';
   changecolor.color='green';
 }
-else if(time>=12 && time<=7)
+else if(time>=12 && time<=17)
 {
-  wish='Goode AfterNoon';
+  wish='Good AfterNoon';
   changecolor.color='red';
 }
 else

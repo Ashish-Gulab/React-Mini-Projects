@@ -1,6 +1,8 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDom from 'react-dom/client';
 import './index.css';
+
+const root=ReactDom.createRoot(document.getElementById('root'));
 
 // let time=new Date(2023,5,20,20).getHours();
 let time=new Date().getHours();
@@ -21,4 +23,4 @@ else
   wish='GoodNight';
   changecolor.color='orange';
 }
-ReactDom.render(<div><h1>Hello Sir,<span style={changecolor}>{wish}</span></h1></div>, document.getElementById('root'));
+root.render(<div><h1>Hello Sir,<span style={changecolor}>{wish}</span></h1></div>);

@@ -1,0 +1,19 @@
+.navb{
+    color: red;
+    border-bottom: 1px solid green;
+    &.active{
+        color: blue;
+    }
+}
+
+.navb:hover{
+    color: green;
+}
+
+.nav_style{
+    width: 100%;
+    line-height: 60px;
+    background-color: #20232a;
+    display: flex;
+    justify-content: space-around;
+}
